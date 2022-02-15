@@ -1,0 +1,526 @@
+@import "null.css";
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,400;1,600&display=swap');
+
+body {
+ background-color: #FF8000;
+ font-family: "Josefin Sans", "Arial", sans-serif;
+ font-size: 20px;
+ font-weight: 400;
+ color: #fff;
+ line-height: 1.5;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header {
+  padding: 50px 15px;
+  background-image: linear-gradient(
+  140deg,
+  hsl(0deg 100% 49%) 0%,
+  hsl(21deg 100% 49%) 9%,
+  hsl(42deg 100% 50%) 27%,
+  hsl(53deg 100% 50%) 44%,
+  hsl(43deg 100% 50%) 58%,
+  hsl(33deg 100% 50%) 70%,
+  hsl(14deg 89% 44%) 81%,
+  hsl(351deg 74% 33%) 91%,
+  hsl(327deg 61% 20%) 100%
+  );
+  margin-bottom: 50px;
+  text-align: center;
+  box-shadow: 30px 0 30px hsl(60, 100%, 50%);
+  border-radius: 0 0 50px 50px;
+}
+.title {
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 10px #000;
+  border-bottom: 5px solid transparent;
+  padding: 30px 15px;
+}
+.title:hover {
+  border-bottom: 5px solid rgb(0, 0, 0, 0.5);
+  box-shadow: 0 15px 20px #000;
+}
+.hand {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.hand img {
+  max-width: 100%;
+}
+.first {
+  max-width: 1200px;
+  height: 350px;
+  background-color: red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+  box-shadow: 5px 0 20px red;
+  margin: 0 auto 60px;
+}
+.first:hover::before, .second:hover::before, .third:hover::before, .forth:hover::before, .fifth:hover::before, .six:hover::before, .seventh:hover::before {
+  content: "";
+  display: block;
+  margin-left: -20px;
+  margin-bottom: -50px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.first:hover::before {
+  background: url("../img/apple1.png") center /50px 50px;
+}
+.first:hover .second {
+  background-color: yellow;
+  box-shadow: 5px 0 20px yellow;
+}
+.first:hover .third {
+  box-shadow: 5px 0 20px yellow;
+}
+.second {
+  max-width: 1100px;
+  height: 300px;
+  margin: 0 auto 50px;
+  background-color: orange;
+  box-shadow: 5px 0 20px red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+}
+.second:hover::before {
+  background: url("../img/orange1.png") center /50px 45px;
+}
+.second:hover .forth {
+  box-shadow: 5px 0 20px green;
+}
+.second:hover .third {
+  background-color: green;
+  box-shadow: 5px 0 20px green;
+}
+.third {
+  max-width: 1000px;
+  height: 250px;
+  margin: 0 auto 50px;
+  background-color: yellow;
+  box-shadow: 5px 0 20px red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+}
+.third:hover::before {
+  background: url("../img/lemon.png") center /75px 50px;
+}
+.third:hover .forth {
+  background-color: #a8cbe9;
+  box-shadow: 5px 0 20px #a8cbe9;
+}
+.third:hover .fifth {
+  box-shadow: 5px 0 20px #a8cbe9;
+}
+.forth {
+  max-width: 900px;
+  height: 200px;
+  margin: 0 auto 50px;
+  background-color: green;
+  box-shadow: 5px 0 20px red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+}
+.forth:hover::before {
+  background: url("../img/avocado.png") center /90px 50px;
+}
+.forth:hover .fifth {
+  background-color: blue;
+  box-shadow: 5px 0 20px blue;
+}
+.forth:hover .six {
+  box-shadow: 5px 0 20px blue;
+}
+.fifth {
+  max-width: 800px;
+  height: 150px;
+  margin: 0 auto 50px;
+  background-color: #a8cbe9;
+  box-shadow: 5px 0 20px red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+}
+.fifth:hover::before {
+  background: url("../img/water.png") center /60px 50px;
+}
+.fifth:hover .six {
+  background-color: violet;
+  box-shadow: 5px 0 20px violet;
+}
+.fifth:hover .seventh {
+  box-shadow: 5px 0 20px violet;
+}
+.six {
+  max-width: 700px;
+  height: 100px;
+  margin: 0 auto 50px;
+  background-color: blue;
+  box-shadow: 5px 0 20px red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+}
+.six:hover::before {
+  background: url("../img/cliva.png") center /65px 50px;
+}
+.six:hover .seventh {
+  background-color: red;
+  box-shadow: 5px 0 20px red;
+}
+.seventh {
+  max-width: 600px;
+  height: 50px;
+  margin: 0 auto 50px;
+  background-color: violet;
+  box-shadow: 5px 0 20px red;
+  border-radius: 0% 100% 50% 50% / 0% 0% 100% 100% ;
+}
+.seventh:hover::before {
+  background: url("../img/grape.png") center /50px 50px;
+}
+/* .seventh:hover .first {
+  box-shadow: 5px 0 20px red;
+  background-color: orange;
+} */
+.block {
+  max-width: 800px;
+  min-height: 800px;
+  background: url("../img/winter-cat.jpg") center / cover no-repeat;
+  margin: 0 auto 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 60px 30px 60px #fff;
+}
+.block:hover {
+  box-shadow: inset 40px 30px 100px #fff, inset -40px -30px 100px #fff;
+}
+.block:hover .what {
+  display: block;
+}
+.what {
+  width: 220px;
+  height: 200px;
+  border-radius: 31% 69% 0% 100% / 44% 38% 62% 56% ;
+  overflow: hidden;
+  background: url('../img/what.jpg') center / 250px no-repeat;
+  margin-left: 100px;
+  margin-top: 80px;
+  display: none;
+}
+.winter-first {
+  background: url('../img/fire.gif') bottom center / 320px no-repeat, url("../img/winter-home.jpg") no-repeat;
+  padding: 50px 15px;
+  margin-bottom: 60px;
+  min-height: 700px;
+}
+.winter-first:hover {
+  border-radius: 100px;
+  box-shadow: inset 50px 50px 50px #fff, inset -50px -50px 50px #fff;
+}
+.winter-first:hover .subtitle {
+  text-shadow: 30px 30px 20px blue;
+}
+.winter-first:hover .first-text {
+  color: blue;
+  font-size: 24px;
+}
+.text-top {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.subtitle {
+  font-family: "Gideon Roman", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  text-shadow: 10px -10px 10px blue;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.text {
+  margin-bottom: 20px;
+}
+.first-text {
+  max-width: 800px;
+  margin-left: auto;
+  text-align: right;
+}
+.wolf {
+  background: url('../img/wolf.jpg') center / 350px no-repeat;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+}
+.winter-first:hover .wolf {
+  margin-right: auto;
+}
+.winter-second {
+  padding: 50px 15px;
+  border: 6px double transparent;
+  border-radius: 50px 0 50px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.winter-second:hover {
+  border: 6px double #fff;
+  box-shadow: 20px 20px 35px red;
+}
+.winter-second p:nth-child(2) {
+  color: #000;
+  font-size: 26px;
+  text-decoration: underline;
+}
+.winter-second p:nth-of-type(3) {
+  color: #000;
+  font-size: 30px;
+  text-decoration: overline;
+}
+.winter-second:hover p:nth-of-type(2) {
+  color: red;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+.winter-second .subtitle {
+  display: inline-block;
+  border: 6px double #fff;
+  border-radius: 50px 0 50px 0;
+  padding: 15px 50px;
+  box-shadow: 20px 20px 35px red;
+  text-shadow: 15px 5px 10px red;
+  margin-bottom: 50px;
+}
+.winter-second:hover .subtitle {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  border: 6px dashed #fff;
+  box-shadow: inset 20px 20px 35px red;
+}
+.winter-second p:last-of-type:hover {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(
+  15deg,
+  hsl(0deg 100% 49%) 0%,
+  hsl(21deg 100% 49%) 9%,
+  hsl(42deg 100% 50%) 27%,
+  hsl(53deg 100% 50%) 44%,
+  hsl(43deg 100% 50%) 58%,
+  hsl(33deg 100% 50%) 70%,
+  hsl(14deg 89% 44%) 81%,
+  hsl(351deg 74% 33%) 91%,
+  hsl(327deg 61% 20%) 100%
+);
+}
+.link-block {
+  display: inline-block;
+  padding: 15px 30px;
+  outline: 3px dotted #fff;
+  margin-bottom: 30px;
+  border-radius: 50px 0 50px 0;
+  box-shadow: inset 20px 20px 35px red;
+}
+.link-block:hover {
+  display: block;
+  max-width: 60%;
+  margin: 0 auto 30px;
+  padding: 15px 30px 15px 60px;
+  background: url('../img/fire1.png') 30px center / 50px no-repeat;
+  outline: 3px solid #fff;
+  box-shadow: inset 10px -10px 20px #fff;
+}
+.winter-third {
+  padding: 50px 25px;
+  background: url('../img/cat.jpg') center/ cover no-repeat;
+  border-radius: 41% 59% 50% 50% / 34% 28% 72% 66% ;
+  box-shadow: 0 -20px 50px rgb(71, 113, 177);
+  margin-bottom: 50px;
+}
+.winter-third:hover {
+  background: url('../img/winter-horse.jpg') center/ cover no-repeat;
+  box-shadow: 0 -20px 20px brown;
+}
+.winter-third *:first-child {
+  color: rgba(125, 74, 192, 0.6);
+  font-size: 50px;
+  font-weight: 700;
+}
+.winter-third .subtitle {
+  margin-bottom: 600px;
+  text-shadow: 20px -10px 10px #fff;
+}
+.winter-third:hover .subtitle {
+  margin-bottom: 300px;
+}
+.winter-third:hover .subtitle, .winter-third:hover .text {
+  color: #000;
+  text-shadow: 20px -10px 10px rgb(41, 38, 38);
+}
+.winter-third p:first-of-type {
+  max-width: 600px;
+  margin-left: auto;
+}
+.winter-third:hover p:first-of-type {
+  max-width: 400px;
+  margin-bottom: 300px;
+}
+.list {
+  text-align: center;
+}
+.item {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 5px 15px;
+  border: 3px solid transparent;
+}
+.item:not(:last-child) {
+  margin-right: 30px;
+}
+.item:nth-child(odd) {
+  border-radius: 20%;
+  border: 3px solid #c5ee82;
+  box-shadow: 15px 15px 30px rgb(71, 138, 226), inset 15px 15px 30px #fff;
+}
+.item:hover {
+  box-shadow: 15px 15px 30px rgb(226, 89, 71), inset 15px 15px 50px rgb(218, 111, 68);
+}
+.item:nth-child(even):hover {
+  border-radius: 20%;
+  border: 3px solid #c5ee82;
+}
+.winter-forth {
+  background: url('../img/winter-sky.jpg') 0 0 / cover no-repeat;
+  padding: 50px 30px 250px;
+  border-radius: 20%;
+  margin-bottom: 100px;
+}
+.winter-forth:hover {
+  box-shadow: inset 15px 30px 20px #fff, 15px 30px 20px #fff;
+}
+.winter-forth .text {
+  border: 3px solid #FF8000;
+  border-radius: 50%;
+  max-width: 800px;
+  margin-left: auto;
+  box-shadow: 15px 15px 20px #FF8000;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.winter-forth .text:hover {
+  box-shadow: 15px 15px 20px #ff4800;
+}
+.winter-forth .text::first-letter {
+  font-size: 60px;
+}
+.footer {
+  text-align: center;
+  padding: 50px 0;
+}
+.footer-item {
+  display: inline-block;
+  margin-right: 50px;
+  padding-bottom: 100px;
+}
+.footer-item:last-child {
+  margin-right: 0;
+}
+.footer-list {
+  margin-bottom: 50px;
+}
+.footer-link {
+  padding: 15px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 5px solid #fff;
+  border-bottom: none;
+  display: inline-block;
+}
+.footer-link:hover {
+  border-radius: 50px;
+  box-shadow: 0 15px 10px #ff4800;
+  text-shadow: 20px 0 10px #fff;
+  color: red;
+}
+.footer-item:hover {
+  padding-bottom: 0;
+}
+.footer-link:focus {
+  color: blueviolet;
+  text-shadow: 10px 0 10px rgb(212, 67, 67);
+}
+.footer-link:active {
+  color: #c5ee82;
+  text-shadow: 20px 0 40px rgb(255, 255, 255);
+}
+.footer-link:visited {
+  color: aqua;
+  text-shadow: 20px 0 40px rgb(68, 12, 12);
+}
+.footer-link::after {
+  content: "";
+  display: block;
+  background: url('../img/winter-cat.jpg') center / 100px no-repeat;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.footer-item::after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+.item1::after {
+  background: url('../img/winter-tree.jpg') center / 100px 60px no-repeat;
+}
+.item2::after {
+  background: url('../img/winter-river.jpg') center / 100px 60px no-repeat;
+}
+.item3::after {
+  background: url('../img/winter-sun.jpg') center / 100px 60px no-repeat;
+}
+.item4::after {
+  background: url('../img/house.jpg') center / 100px 60px no-repeat;
+}
+.item5::after {
+  background: url('../img/tree.jpg') center / 100px 60px no-repeat;
+}
+.item6::after {
+  background: url('../img/road.jpg') center / 100px 60px no-repeat;
+}
+.footer-item:hover:after {
+  display: block;
+}
+.link {
+  font-size: 48px;
+  text-transform: uppercase;
+  text-shadow: 0 -20px 20px rgb(221, 190, 181);
+  padding: 10px 30px;
+  box-shadow: 10px -10px 10px #fff, inset 10px -10px 10px #fff;
+}
+.link:hover {
+  color: #ff4800;
+  box-shadow: 10px -10px 10px red, inset 10px -10px 10px red;
+  text-shadow: 15px 5px 10px #fff;
+  border-radius: 50% 0 50% 0;
+}
+.link:active {
+  color: aqua;
+  box-shadow: 10px -10px 10px  aqua, inset 10px -10px 10px  aqua;
+  border-radius: 20%;
+}
+.link:focus {
+  color: darkblue;
+  box-shadow: 10px -10px 10px  darkblue, inset 10px -10px 10px  darkblue;
+  border-radius: 0 50% 50% 0;
+}
+
