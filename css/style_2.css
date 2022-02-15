@@ -267,6 +267,7 @@ body {
   border-radius: 50px 0 50px 0;
   text-align: center;
   margin-bottom: 60px;
+  background: url('../img/like.png') center / 100px no-repeat fixed;
 }
 .winter-second:hover {
   border: 6px double #fff;
@@ -507,11 +508,15 @@ body {
   padding: 10px 30px;
   box-shadow: 10px -10px 10px #fff, inset 10px -10px 10px #fff;
 }
+.link::before {
+  content: '';
+  margin-left: -150px;
+}
 .link:hover {
   color: #ff4800;
   box-shadow: 10px -10px 10px red, inset 10px -10px 10px red;
   text-shadow: 15px 5px 10px #fff;
-  border-radius: 50% 0 50% 0;
+  border-radius: 50%;
 }
 .link:active {
   color: aqua;
@@ -519,8 +524,14 @@ body {
   border-radius: 20%;
 }
 .link:focus {
-  color: darkblue;
-  box-shadow: 10px -10px 10px  darkblue, inset 10px -10px 10px  darkblue;
+  color: rgb(86, 86, 216);
+  box-shadow: 10px -10px 10px  rgb(86, 86, 216), inset 10px -10px 10px rgb(86, 86, 216);
+  text-shadow: 10px -10px 10px  rgb(134, 134, 224);
   border-radius: 0 50% 50% 0;
 }
+/* .link:visited {
+  color: rgb(128, 221, 99);
+  box-shadow: 10px -10px 10px  rgb(0, 139, 0), inset 10px -10px 10px  rgb(23, 139, 0);
+  border-radius: 0;
+} */
 
