@@ -44,11 +44,17 @@ body {
 }
 .new-item {
   margin-bottom: 12px;
-  padding-left: 30px;
-  display: inline-block;
-  margin-left: 16px;
-  background: url('../img/index/circle.svg') left 5px no-repeat;
+  padding-left: 32px;
 } 
+.new-item::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: -32px;
+  margin-right: 16px;
+  background: url('../img/index/circle.svg') 0 0 / 16px no-repeat;
+}
 .more {
   background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
   border-radius: 4px;
